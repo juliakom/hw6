@@ -40,12 +40,12 @@ console.log(sum1, sum2, sum3)
 
 function createPipe(f = '=====') {
   return function (text) {
-    return  f + " '" + text + "' " + f;
+    return console.log(f + " '" + text + "' " + f);
   };
 }
 
 const pipeFunction = createPipe();
-console.log(pipeFunction('some text you like'));
+pipeFunction('some text you like');
 
 // 5 ---------------------------------------------
 
